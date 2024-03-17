@@ -14,7 +14,38 @@
         public int Age { get; private set; }
         public void AddGrade(float grade)
         {
-            this.grades.Add(grade);
+            int valueInInt = (int) grade;
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("invalid grade value");
+            }
+        }
+        public void AddGrade (string grade)
+        {
+            if (float.TryParse (grade, out float result))
+            {
+                this.AddGrade(result);
+            }
+            else 
+            {
+                Console.WriteLine("string is not float");
+            }
+        }
+        public void AddGrade (double grade) 
+        {
+            AddGrade((float)grade);
+        }
+        public void AddGrade (long grade)
+        {
+            AddGrade((float)grade);
+        }
+        public void AddGrade (decimal grade) 
+        {
+            AddGrade((float) grade);
         }
         public Statistics GetStatistics () 
         {
