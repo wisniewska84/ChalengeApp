@@ -1,5 +1,4 @@
 ﻿using ChalengeApp;
-using System;
 
 var employee = new Employee("Szymon", "Kowalski", 30);
 employee.AddGrade("Anna");
@@ -11,32 +10,6 @@ employee.AddGrade(-1);
 employee.AddGrade(0);
 employee.AddGrade(3.33333);
 var statistics = employee.GetStatistics();
-var statistics1 = employee.GetStatisticsWithDoWhile();
-var statistics2 = employee.GetStatisticsWithWhile();
-var statistics3 = employee.GetStatisticsWithForEach();
-var statistics4 = employee.GetStatisticsWithFor();
-
-Console.WriteLine("GetStatistics");
-Console.WriteLine($"Average: {statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine("");
-Console.WriteLine("GetStatisticsWithDoWhile");
-Console.WriteLine($"Average: {statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine("");
-Console.WriteLine("GetStatisticsWithWhile");
-Console.WriteLine($"Average: {statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine("");
-Console.WriteLine("GetStatisticsWithForEach");
-Console.WriteLine($"Average: {statistics.Average:N2}");
-Console.WriteLine($"Max: {statistics.Max}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine("");
-Console.WriteLine("GetStatisticsWithFor");
 Console.WriteLine($"Average: {statistics.Average:N2}");
 Console.WriteLine($"Max: {statistics.Max}");
 Console.WriteLine($"Min: {statistics.Min}");
